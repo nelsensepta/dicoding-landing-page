@@ -8,12 +8,39 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <header id="header" class="header">
+      <nav class="nav__container container">
+        <div class="logo__wrapper">
+          <a href="#header" class="logo-title">Dicoding Profile</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__lists">
+            <li class="nav__lists-item"><a href="#home">Home</a></li>
+            <li class="nav__lists-item"><a href="#services">Servies</a></li>
+            <li class="nav__lists-item"><a href="#product">Product</a></li>
+            <li class="nav__lists-item"><a href="#pricing">Pricing</a></li>
+          </ul>
+          <div class="btn__login">
+            <a href="#">Login</a>
+          </div>
+          <ion-icon name="close" class="nav__close" id="nav-close"></ion-icon>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <ion-icon name="menu" class="menu-icon"></ion-icon>
+        </div>
+      </nav>
     </header>
-
+    <!-- Main Content -->
     <main>
-      <aside></aside>
+      <aside class="container">
+        <div class="wrapper__profile">
+          <img class="img__profile" src="assets/img/me.jpg" alt="profile" />
+          <div class="wrapper__title_profile">
+            <h1 class="title__profile">Nelsen Septa Henidar</h1>
+            <span class="desc__profile">Front End Developer</span>
+          </div>
+        </div>
+      </aside>
     </main>
     <script src="assets/js/script.js"></script>
   </body>

@@ -119,9 +119,6 @@ input {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.section {
-  padding: 4.5rem 0 2.5rem;
-}
 
 .section__title {
   font-size: 3.5rem;
@@ -159,6 +156,7 @@ input {
   display: flex;
   align-items: center;
   flex-direction: row;
+  padding: 10px 0;
   justify-content: space-between;
 }
 
@@ -223,10 +221,10 @@ input {
 
 /* ========================================= Aside ====================================== */
 aside {
-  padding-top: 100px;
+  padding: 150px 0;
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
+  background-color: var(--main);
   justify-items: center;
   align-items: center;
 }
@@ -249,4 +247,28 @@ aside {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+}
+
+/* ==================================================== Hero Section ============================================= */
+.hero__container {
+  position: relative;
+  margin-top: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__wrapper-item {
+  position: absolute;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  text-align: start;
+}
+.hero__item {
+  background-color: var(--bg-section);
+  font-size: 1.25rem;
+  padding: 1.5rem;
 }

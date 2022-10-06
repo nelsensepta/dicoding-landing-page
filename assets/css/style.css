@@ -256,7 +256,7 @@ aside {
 /* ==================================================== Hero Section ============================================= */
 .hero__container {
   position: relative;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,9 +272,11 @@ aside {
   text-align: start;
 }
 .hero__item {
+  text-align: center;
   background-color: var(--bg-section);
   font-size: 1.25rem;
-  padding: 1.5rem;
+  min-width: 325px;
+  padding: 2rem 1.5rem;
 }
 
 /* ============================================ Web design ================================================== */
@@ -449,12 +451,12 @@ aside {
   display: inline;
   align-items: flex-start;
   margin-bottom: 2rem;
-  color: #fff;
+  color: #000;
 }
 
 .marketing__item-title {
   font-size: 5rem;
-  color: #fff;
+  color: #000;
   margin-bottom: 3rem;
 }
 
@@ -469,14 +471,93 @@ aside {
 
 .marketing__item-btn {
   padding: 0.75rem 1rem;
-  background-color: #fff;
-  color: var(--black);
+  background-color: var(--second);
+  color: var(--font-main);
   transition: 0.4s;
   font-weight: bold;
 }
 .marketing__item-btn:hover {
   padding: 0.75rem 1rem;
-  color: #fff;
-  background-color: var(--semi-grey);
+  color: #000;
+  background-color: var(--font-main);
   font-weight: bold;
+}
+
+/* ===================================== Footer ================================= */
+.footer {
+  margin-top: 4rem;
+}
+
+.footer__container {
+  row-gap: 5rem;
+}
+
+.footer__content {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  row-gap: 2rem;
+}
+
+.footer__title,
+.footer__subtitle {
+  font-size: 3rem;
+}
+
+.footer__title {
+  margin-bottom: 0.5rem;
+}
+
+.footer__description {
+  margin-bottom: 2rem;
+}
+
+.footer__social {
+  font-size: 1.25rem;
+  color: var(--second);
+  margin-right: 1.25rem;
+}
+
+.footer__subtitle {
+  margin-bottom: 1rem;
+}
+.footer__item {
+  margin-bottom: 0.75rem;
+}
+
+.footer__link {
+  color: var(--font-main);
+}
+
+.footer__link:hover {
+  color: var(--font-second);
+}
+
+.footer__rights {
+  display: flex;
+  flex-direction: row;
+  row-gap: 1.5rem;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.footer__copy,
+.footer__terms-link {
+  font-size: 1rem;
+  color: var(--font-main);
+}
+
+.footer__data-title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer__terms {
+  display: flex;
+  column-gap: 1.5rem;
+  justify-content: center;
+}
+
+.footer__terms-link:hover {
+  color: var(--second);
 }

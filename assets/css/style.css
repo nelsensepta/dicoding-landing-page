@@ -224,25 +224,41 @@ input {
 /* ========================================= Main ===================================== */
 
 /* ========================================= Aside ====================================== */
-aside {
+.aside {
+  background-color: var(--main);
+}
+
+.profile {
+  justify-items: center;
   padding: 150px 0;
   display: flex;
-  flex-direction: column;
-  background-color: var(--main);
-  justify-items: center;
+  flex-direction: row;
   align-items: center;
 }
 
 .wrapper__profile {
   text-align: center;
   display: flex;
+  min-width: 50%;
   justify-items: center;
   align-items: center;
   flex-direction: column;
 }
 
+.artikel {
+  min-width: 50%;
+  text-align: start;
+  font-size: var(--h1-font-size);
+}
 .title__profile {
-  font-size: larger;
+  font-weight: var(--font-semi-bold);
+  margin-top: 1rem;
+  font-size: var(--h2-font-size);
+}
+
+.desc__profile {
+  font-weight: var(--font-medium);
+  font-size: var(--h3-font-size);
 }
 
 .img__profile {
@@ -285,15 +301,16 @@ aside {
 }
 .web__container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  gap: 3rem;
   justify-content: space-between;
 }
 
 .web__profile {
-  display: inline;
   width: 50%;
-  position: relative;
-  align-items: flex-start;
+  align-items: center;
+  justify-items: center;
+  display: flex;
 }
 
 .web__profile-detail {
@@ -325,9 +342,6 @@ aside {
   opacity: 0.6;
 }
 .web__profile-img {
-  max-width: 80%;
-  position: absolute;
-  overflow: hidden;
   box-shadow: var(--shadow);
   -webkit-box-shadow: var(--shadow);
   -moz-box-shadow: var(--shadow);
@@ -352,7 +366,7 @@ aside {
 }
 
 .web__item-title {
-  font-size: 5rem;
+  font-size: 2rem;
   color: #000;
   margin-bottom: 3rem;
 }
@@ -367,14 +381,16 @@ aside {
 }
 
 .web__item-btn {
+  background-color: var(--main);
   padding: 0.75rem 1rem;
-  color: #000;
   transition: 0.4s;
+  color: var(--font-main);
   font-weight: bold;
 }
 .web__item-btn:hover {
+  background-color: #000;
   padding: 0.75rem 1rem;
-  color: #000;
+  color: var(--second);
   font-weight: bold;
 }
 

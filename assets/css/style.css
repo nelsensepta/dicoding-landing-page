@@ -247,6 +247,7 @@ input {
 
 .artikel {
   min-width: 50%;
+  line-height: normal;
   text-align: start;
   font-size: var(--h1-font-size);
 }
@@ -270,15 +271,16 @@ input {
 }
 .wrapper_skills {
   display: flex;
+  gap: 2rem;
   flex-direction: row;
-  justify-content: space-around;
-
+  justify-content: start;
+  margin-top: 3rem;
   align-items: center;
 }
 
 .skills {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   flex-direction: column;
   justify-items: start;
   align-items: flex-start;

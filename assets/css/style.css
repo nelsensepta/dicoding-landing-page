@@ -314,7 +314,7 @@ input {
 
 /* ============================================ Slicing HTML ================================================== */
 .web {
-  margin-top: 5rem;
+  padding: 5rem 0;
 }
 .web__container {
   display: flex;
@@ -413,7 +413,8 @@ input {
 
 /* ===================================== Integrasi API =================================== */
 .integrasi {
-  margin-top: 5rem;
+  background-color: var(--second);
+  padding: 5rem 0;
 }
 .integrasi__container {
   display: flex;
@@ -513,7 +514,7 @@ input {
 
 /* ===================================== Sistem Informasi =================================== */
 .si {
-  margin-top: 5rem;
+  padding: 5rem 0;
 }
 .si__container {
   display: flex;
@@ -687,4 +688,183 @@ input {
 
 .footer__terms-link:hover {
   color: var(--second);
+}
+
+/* ========================================= Rerponsive =============================================== */
+/* For small devices */
+@media screen and (max-width: 1024px) {
+  .pricing__container {
+    flex-direction: column;
+  }
+  .pricing__wrapper {
+    width: 60%;
+  }
+
+  .hero__title {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__toggle,
+  .nav__close {
+    display: inline;
+    z-index: 10;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 3rem;
+    font-size: 1.5rem;
+    right: 3rem;
+  }
+
+  .btn__login {
+    display: none;
+  }
+
+  .nav__menu {
+    position: fixed;
+    background-color: var(--semi-black);
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    z-index: 100;
+    color: #fff;
+    box-shadow: -1px 0 4px rgb(14 55 63 / 15%);
+    padding: 3rem;
+    transition: 0.4s;
+  }
+
+  .nav__lists {
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .nav__lists-item a {
+    color: #fff;
+  }
+  .pricing__wrapper {
+    width: 75%;
+  }
+  .hero__title {
+    font-size: 5rem;
+  }
+  .web {
+    padding-bottom: 40rem;
+  }
+  .web__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .web__item {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .web__item-title {
+    text-align: center;
+  }
+
+  .web__item-desc {
+    text-align: center;
+    font-size: 16px;
+  }
+  .web__profile {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .web__profile-img {
+    top: 7rem;
+  }
+  .gallery {
+    margin-top: 10rem;
+  }
+
+  .marketing {
+    padding-bottom: 40rem;
+  }
+  .marketing__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .marketing__item {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .marketing__item-title {
+    text-align: center;
+  }
+
+  .marketing__item-desc {
+    text-align: center;
+    font-size: 16px;
+  }
+  .marketing__profile {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    display: flex;
+  }
+  .marketing__profile-img {
+    top: 7rem;
+  }
+  .footer {
+    margin-top: 10rem;
+  }
+
+  .footer__rights {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero__title {
+    text-align: center;
+  }
+  .hero__item {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .web {
+    padding-bottom: 30rem;
+  }
+  .marketing {
+    padding-bottom: 30rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .web__item-title {
+    font-size: 3.5rem;
+  }
+  .marketing__item-title {
+    font-size: 3.5rem;
+  }
+  .web {
+    padding-bottom: 25rem;
+  }
+  .marketing {
+    padding-bottom: 25rem;
+  }
+  .header {
+    padding: 0 2rem;
+  }
+}
+
+/*  Javascript classes */
+/* show menu */
+.show-menu {
+  right: 0;
 }

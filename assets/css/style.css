@@ -724,7 +724,7 @@ input {
 
   .nav__menu {
     position: fixed;
-    background-color: var(--semi-black);
+    background-color: var(--main);
     top: 0;
     right: -100%;
     width: 70%;
@@ -758,6 +758,7 @@ input {
     flex-direction: column-reverse;
     align-items: center;
   }
+
   .web__item {
     width: 90%;
     align-items: center;
@@ -782,6 +783,65 @@ input {
   .web__profile-img {
     top: 7rem;
   }
+
+  .integrasi__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .integrasi__item {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .integrasi__item-title {
+    text-align: center;
+  }
+
+  .integrasi__item-desc {
+    text-align: center;
+    font-size: 16px;
+  }
+  .integrasi__profile {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .integrasi__profile-img {
+    top: 7rem;
+  }
+
+  .si__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .si__item {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .si__item-title {
+    text-align: center;
+  }
+
+  .si__item-desc {
+    text-align: center;
+    font-size: 16px;
+  }
+  .si__profile {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .si__profile-img {
+    top: 7rem;
+  }
+
   .gallery {
     margin-top: 10rem;
   }
@@ -846,10 +906,28 @@ input {
 }
 
 @media screen and (max-width: 500px) {
-  .web__item-title {
-    font-size: 3.5rem;
+  .profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .marketing__item-title {
+
+  .section__title {
+    font-size: 2rem;
+  }
+  .hero__wrapper-item {
+    position: relative;
+    padding: 0;
+    flex-direction: column;
+  }
+  .web__item-title {
+    font-size: 1.5rem;
+  }
+
+  .integrasi {
+    flex-direction: column;
+  }
+  /* .marketing__item-title {
     font-size: 3.5rem;
   }
   .web {
@@ -857,7 +935,7 @@ input {
   }
   .marketing {
     padding-bottom: 25rem;
-  }
+  } */
   .header {
     padding: 0 2rem;
   }

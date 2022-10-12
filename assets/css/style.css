@@ -730,7 +730,7 @@ input {
     width: 70%;
     height: 100%;
     z-index: 100;
-    color: #fff;
+    color: #000;
     box-shadow: -1px 0 4px rgb(14 55 63 / 15%);
     padding: 3rem;
     transition: 0.4s;
@@ -743,7 +743,7 @@ input {
   }
 
   .nav__lists-item a {
-    color: #fff;
+    color: #000;
   }
   .pricing__wrapper {
     width: 75%;
@@ -751,6 +751,13 @@ input {
   .hero__title {
     font-size: 5rem;
   }
+
+  .profile {
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .web {
     padding-bottom: 40rem;
   }
@@ -906,10 +913,49 @@ input {
 }
 
 @media screen and (max-width: 500px) {
+  .artikel {
+    flex-direction: column;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .wrapper_skills {
+    text-align: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+  }
   .profile {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .hero__container {
+    margin-top: -3rem;
+  }
+
+  .web {
+    padding-bottom: 4rem;
+  }
+  .integrasi {
+    padding-bottom: 4rem;
+  }
+
+  .si {
+    padding-bottom: 3rem;
+  }
+
+  .footer {
+    margin-top: 4rem;
+  }
+
+  .footer__title {
+    font-size: 1.5rem;
+  }
+  .footer__subtitle {
+    font-size: 1.5rem;
   }
 
   .section__title {
@@ -937,7 +983,7 @@ input {
     padding-bottom: 25rem;
   } */
   .header {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 }
 

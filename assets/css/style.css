@@ -693,6 +693,24 @@ input {
 /* ========================================= Rerponsive =============================================== */
 /* For small devices */
 @media screen and (max-width: 1024px) {
+  .header {
+    padding: 1rem 1rem;
+  }
+
+  .hero__wrapper-item {
+    position: relative;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .hero__item {
+    min-width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .pricing__container {
     flex-direction: column;
   }
@@ -705,6 +723,9 @@ input {
   }
 }
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+  }
   .nav__toggle,
   .nav__close {
     display: inline;
@@ -752,6 +773,21 @@ input {
     font-size: 5rem;
   }
 
+  .hero__wrapper-item {
+    position: relative;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .hero__item {
+    min-width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .profile {
     padding-bottom: 3rem;
     padding-left: 1rem;
@@ -759,7 +795,9 @@ input {
   }
 
   .web {
-    padding-bottom: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
   }
   .web__container {
     flex-direction: column-reverse;
@@ -791,6 +829,11 @@ input {
     top: 7rem;
   }
 
+  .integrasi {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+  }
   .integrasi__container {
     flex-direction: column;
     align-items: center;
@@ -818,6 +861,12 @@ input {
   }
   .integrasi__profile-img {
     top: 7rem;
+  }
+
+  .si {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
   }
 
   .si__container {
@@ -849,46 +898,8 @@ input {
     top: 7rem;
   }
 
-  .gallery {
-    margin-top: 10rem;
-  }
-
-  .marketing {
-    padding-bottom: 40rem;
-  }
-  .marketing__container {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-  }
-  .marketing__item {
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .marketing__item-title {
-    text-align: center;
-  }
-
-  .marketing__item-desc {
-    text-align: center;
-    font-size: 16px;
-  }
-  .marketing__profile {
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    display: flex;
-  }
-  .marketing__profile-img {
-    top: 7rem;
-  }
   .footer {
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
 
   .footer__rights {
@@ -982,9 +993,6 @@ input {
   .marketing {
     padding-bottom: 25rem;
   } */
-  .header {
-    padding: 0 1rem;
-  }
 }
 
 /*  Javascript classes */
